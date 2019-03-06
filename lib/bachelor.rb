@@ -78,4 +78,20 @@ end
 
 def get_average_age_for_season(data, season)
   # code here
+  
+  data.each do |year, info|
+    if year == season
+      info.each do |girl|
+        girl.each do |key, value|
+          
+          if value == occupation
+            
+            return girl["name"]
+            
+            
+          end
+        end
+      end
+    end
+  end
 end
