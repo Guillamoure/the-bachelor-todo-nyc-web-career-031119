@@ -1,3 +1,4 @@
+require 'pry'
 def get_first_name_of_season_winner(data, season)
   # code here
   data.each do |year, info|
@@ -5,6 +6,7 @@ def get_first_name_of_season_winner(data, season)
       info.each do |girl|
         girl.each do |key, value|
           if value == "winner"
+            binding.pry
             full_name = girl["name"]
             name_array = full_name.to.a
             return name_array[0]
