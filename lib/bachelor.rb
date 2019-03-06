@@ -7,9 +7,9 @@ def get_first_name_of_season_winner(data, season)
         girl.each do |key, value|
           
           if value == "winner"
-            
-            print full_name = girl["name"]
             binding.pry
+            print full_name = girl["name"]
+            
             name_array = full_name.to.a
             
           end
