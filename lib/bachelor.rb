@@ -10,7 +10,7 @@ def get_first_name_of_season_winner(data, season)
             
             print full_name = girl["name"]
             name_array = full_name.to.a
-            return name_array
+            binding.pry
           end
         end
       end
