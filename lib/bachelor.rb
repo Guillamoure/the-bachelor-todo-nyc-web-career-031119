@@ -9,8 +9,9 @@ def get_first_name_of_season_winner(data, season)
           if value === "Winner"
             
             print full_name = girl["name"]
-            binding.pry
-            name_array = full_name.to.a
+            
+            name_array = full_name.split(" ")
+            return name_array[0]
             
           end
         end
