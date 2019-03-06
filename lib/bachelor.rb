@@ -79,6 +79,7 @@ end
 def get_average_age_for_season(data, season)
   # code here
   sum = 0
+  i = 0
   data.each do |year, info|
     if year == season
       info.each do |girl|
@@ -87,7 +88,8 @@ def get_average_age_for_season(data, season)
           if key == "age"
             
             n = value.to_f
-            sum
+            sum+=n
+            i+=1
             
             
           end
@@ -95,4 +97,6 @@ def get_average_age_for_season(data, season)
       end
     end
   end
+  mean = sum / i
+  return mean
 end
