@@ -66,7 +66,7 @@ def get_occupation(data, hometown)
           
           if value == hometown
             
-            return girl["Occupation"]
+            return girl["occupation"]
             
             
           end
