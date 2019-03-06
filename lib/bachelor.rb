@@ -1,7 +1,9 @@
 def get_first_name_of_season_winner(data, season)
   # code here
   data.each do |year, info|
-    info
+    info.each do |girl|
+      girl.each do |
+    end
   end
 end
 
