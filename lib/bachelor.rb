@@ -8,7 +8,7 @@ def get_first_name_of_season_winner(data, season)
           binding.pry
           if value == "winner"
             
-            full_name = girl["name"]
+            print full_name = girl["name"]
             name_array = full_name.to.a
             
           end
